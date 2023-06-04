@@ -1,0 +1,42 @@
+\documentclass[
+ DIV=14,
+ draft,
+]{antrag} %LuaLaTeX verwenden :-)
+
+\title{Antrag Antragsname}
+\author{Fraktion Liste Poppelsdorf}
+\date{\today}
+
+\usepackage{blindtext}
+
+\begin{document}
+
+\maketitle
+
+Das SP möge beschließen:
+
+\begin{linenumbers}
+    \blindtext
+
+    \begin{enumerate}
+        \item Nummer 2 wird wie folgt gefasst:
+            \begin{vtext}
+                \begin{enumerate}[1.,start=2]
+                    \item \blindtext
+                \end{enumerate}
+            \end{vtext}
+    \end{enumerate}
+\end{linenumbers}
+
+\vspace{1em}
+\textbf{Begründung:}\par
+
+\blindtext
+
+\par\vspace{1em}
+Bonn, den \today
+\begin{multicols}{2}
+\raggedcolumns %Entfernt komisches Spacing in zweiter Spalte
+\signature{Max Mustermann}{für die Fraktion Liste Poppelsdorf}
+\end{multicols}
+\end{document}
